@@ -4,8 +4,7 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
            version="3.1">
-<<<<<<< 75d9211eed9b6f762119a1e5a7ef00790e6b3916
-=======
+
     <servlet>
         <servlet-name>ServletElement</servlet-name>
         <servlet-class>com.freestyle.servlet.ServletElementTest</servlet-class>
@@ -75,6 +74,6 @@
         <exception-type>java.lang.Throwable</exception-type >
         <location>/ErrorHandler</location>
     </error-page>
->>>>>>> Initial commit
+
 
 </web-app>
