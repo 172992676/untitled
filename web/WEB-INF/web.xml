@@ -4,5 +4,77 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
            version="3.1">
+<<<<<<< 75d9211eed9b6f762119a1e5a7ef00790e6b3916
+=======
+    <servlet>
+        <servlet-name>ServletElement</servlet-name>
+        <servlet-class>com.freestyle.servlet.ServletElementTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletElement</servlet-name>
+        <url-pattern>/com/freestyle/servlet/ServletElement</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>com.freestyle.servlet.HelloForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/com.freestyle.servlet/HelloForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletElementPostTest</servlet-name>
+        <servlet-class>com.freestyle.servlet.ServletElementPostTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletElementPostTest</servlet-name>
+        <url-pattern>/com.freestyle.servlet.ServletElementPostTest</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.freestyle.servlet.LogFilter</filter-class>
+        <init-param>
+            <param-name>Site</param-name>
+            <param-value>获取成功</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/com.freestyle.servlet.ServletElementPostTest</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>NameFilter</filter-name>
+        <filter-class>com.freestyle.servlet.HelloFormNameFilter</filter-class>
+        <init-param>
+            <param-name>Site</param-name>
+            <param-value>获取成功</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>NameFilter</filter-name>
+        <url-pattern>/com.freestyle.servlet.HelloForm</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>com.freestyle.servlet.ErrorHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/ErrorHandler</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorHandler</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type >
+        <location>/ErrorHandler</location>
+    </error-page>
+>>>>>>> Initial commit
 
 </web-app>
