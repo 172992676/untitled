@@ -17,6 +17,8 @@ public class DatabaseAccess extends HttpServlet {
     //JDBC驱动名及数据库URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String JDBC_URL = "jdbc:mysql://192.168.1.254:3306/test1";
+    //com.mysql.jdbc.Driver
+    //jdbc:mysql://192.168.1.254:3306/test1
 
     //数据库的用户名和密码，需要根据自己的设置
     static final String USER = "sa";
