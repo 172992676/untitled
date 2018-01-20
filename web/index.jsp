@@ -5,6 +5,7 @@
     <title>第一个web项目</title>
   </head>
   <body>
+    Hello World
       <hr>
   <form action="com.freestyle.servlet.ServletElementPostTest" method="post">
         名称<input type="text" name="name" /><br />
