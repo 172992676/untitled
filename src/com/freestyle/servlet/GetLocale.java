@@ -17,10 +17,8 @@ public class GetLocale extends HttpServlet {
         Locale locale = request.getLocale();
         String language = locale.getLanguage();
         String country = locale.getCountry();
-
         //设置响应内容类型
         response.setContentType("text/html;charset=UTF-8");
-
         PrintWriter out  = response.getWriter();
         String title = "检测区域设置";
         String docType = "<!DOCTYPE html> \n";
@@ -31,5 +29,10 @@ public class GetLocale extends HttpServlet {
                 "<h1 align=\"center\">" + language + "</h1>\n" +
                 "<h2 align=\"center\">" + country + "</h2>\n" +
                 "</body></html>");
+        out.println("asd");
+
     }
+
+
+
 }

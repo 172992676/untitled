@@ -14,7 +14,7 @@ public class PageHitCounter extends HttpServlet {
 
     private int hitCount;
 
-    public void init(){
+    public void init() {
         //重置点击计数器
         hitCount = 0;
     }
@@ -38,7 +38,7 @@ public class PageHitCounter extends HttpServlet {
 
     }
 
-    public void destory(){
+    public void destory() {
 
     }
 }
